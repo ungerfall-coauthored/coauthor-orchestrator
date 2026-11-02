@@ -1,1 +1,12 @@
-forks: []
+forks:
+  - name: dotfiles
+    agentic_bootstrapped: true
+    bootstrapped_at: 2026-11-02T12:18:39.384152+00:00
+    created_at: 2026-11-02T12:18:19.429875+00:00
+    fork: ungerfall-coauthored/dotfiles
+    last_branch: coauthor/smoke-test
+    last_commit: f29856e
+    last_task: smoke test marker and agent bootstrap
+    sandbox: /home/ungerfall/development/ungerfall-coauthored/sandboxes/dotfiles
+    updated_at: 2026-11-02T12:18:39.431830+00:00
+    upstream: Ungerfall/dotfiles
