@@ -1,0 +1,4 @@
+upstream_owner: Ungerfall
+fork_owner: ungerfall-coauthored
+# Resolved relative to this repo unless absolute
+sandbox_root: ../sandboxes
