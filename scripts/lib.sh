@@ -9,13 +9,15 @@ read_config() {
 }
 
 resolve_sandbox_root() {
-  local raw
+  local raw root
   raw="$(read_config sandbox_root)"
   if [[ "$raw" = /* ]]; then
-    echo "$raw"
+    root="$raw"
   else
-    echo "$(cd "$ORCH_ROOT/$raw" && pwd)"
+    root="$(cd "$ORCH_ROOT/$raw" 2>/dev/null && pwd || echo "$ORCH_ROOT/$raw")"
   fi
+  mkdir -p "$root"
+  echo "$root"
 }
 
 upstream_owner() { read_config upstream_owner; }
