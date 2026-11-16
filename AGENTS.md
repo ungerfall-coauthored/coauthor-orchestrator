@@ -4,7 +4,7 @@
 
 ## Invoke
 
-Use the portable skill at [agent/skills/coauthor/SKILL.md](agent/skills/coauthor/SKILL.md):
+Use the portable skill at [.agents/skills/coauthor/SKILL.md](.agents/skills/coauthor/SKILL.md):
 
 ```text
 /coauthor <repo> <intent>
@@ -17,7 +17,7 @@ Example: `/coauthor dotfiles add a note in README that this fork is a GenAI sand
 | Path | Role |
 |------|------|
 | [agent/rules/coauthor-isolation.md](agent/rules/coauthor-isolation.md) | Isolation rules |
-| [agent/skills/coauthor/SKILL.md](agent/skills/coauthor/SKILL.md) | Full workflow |
+| [.agents/skills/coauthor/SKILL.md](.agents/skills/coauthor/SKILL.md) | Full workflow |
 | [coauthor.config.yaml](coauthor.config.yaml) | Owners and sandbox paths |
 | [forks.yaml](forks.yaml) | Fork registry |
 | [scripts/](scripts/) | `ensure-fork.sh`, `preflight.sh`, `bootstrap-agentic.sh` |

@@ -1,10 +1,9 @@
 ---
 name: coauthor
 description: >-
-  Fork an Ungerfall upstream repo into ungerfall-coauthored sandboxes, bootstrap
-  agent docs on first use, run a task, push only to the fork. Never PR or push
-  to Ungerfall. Use when the user says /coauthor, coauthor task, or sandbox work
-  on a fork.
+  Run isolated AI tasks on Ungerfall repositories via ungerfall-coauthored forks,
+  including first-use agent bootstrap. Use when the user says /coauthor,
+  coauthor task, or sandbox work on a fork.
 ---
 # Coauthor
 

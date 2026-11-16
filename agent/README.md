@@ -4,8 +4,10 @@ Canonical files:
 
 - [../AGENTS.md](../AGENTS.md) — start here
 - [rules/](rules/) — always-on policies
-- [skills/](skills/) — workflows (`coauthor`, etc.)
+- [../.agents/skills/](../.agents/skills/) — project-discoverable workflows (`coauthor`, etc.)
 - [templates/](templates/) — scaffolds for fork sandboxes
+
+Copilot CLI discovers project skills from `.agents/skills/`; keep skills there.
 
 ## Cursor
 
@@ -13,10 +15,10 @@ Optional symlinks from the repo root:
 
 ```bash
 mkdir -p .cursor
-ln -sf ../agent/skills .cursor/skills
+ln -sf ../.agents/skills .cursor/skills
 ```
 
-Or add `agent/skills` to your user skill path in Cursor settings.
+Or add `.agents/skills` to your user skill path in Cursor settings.
 
 ## Claude Code
 
@@ -26,7 +28,7 @@ Create `CLAUDE.md` at repo root (optional):
 Read AGENTS.md and follow agent/rules/*.md before making changes.
 ```
 
-Symlink skills: `ln -sf agent/skills .claude/skills`
+Symlink skills: `ln -sf ../.agents/skills .claude/skills`
 
 ## GitHub Copilot
 

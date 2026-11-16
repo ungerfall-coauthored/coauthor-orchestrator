@@ -40,7 +40,7 @@ else
   LAYOUT="Inspect repository root for source layout."
 fi
 
-mkdir -p "$SANDBOX/agent/rules" "$SANDBOX/agent/skills"
+mkdir -p "$SANDBOX/agent/rules" "$SANDBOX/.agents/skills"
 
 if [[ ! -f "$SANDBOX/agent/rules/coauthor-isolation.md" ]]; then
   cp "$TEMPLATES/coauthor-isolation.md" "$SANDBOX/agent/rules/coauthor-isolation.md"

@@ -10,7 +10,7 @@ Never open PRs to or push to **`Ungerfall`** upstream. AI work stays on **`unger
 
 1. Use the coauthor GitHub account: `gh auth switch --user ungerfall-coauthored`
 2. Work from `~/development/ungerfall-coauthored/` (git identity via `includeIf`; see [git.md](../../git.md))
-3. In any agent (Cursor, Claude Code, Copilot, etc.), read [AGENTS.md](AGENTS.md) or run **`/coauthor <repo> <intent>`** using [agent/skills/coauthor/SKILL.md](agent/skills/coauthor/SKILL.md)
+3. In any agent (Cursor, Claude Code, Copilot, etc.), read [AGENTS.md](AGENTS.md) or run **`/coauthor <repo> <intent>`** using [.agents/skills/coauthor/SKILL.md](.agents/skills/coauthor/SKILL.md)
 
 ## Scripts
 
@@ -44,4 +44,4 @@ Forking requires **`repo`** or **`public_repo`** on the coauthor classic PAT. Th
 
 ## Agent-agnostic layout
 
-Skills and rules live under [`agent/`](agent/). IDE-specific wiring: [agent/README.md](agent/README.md).
+Skills live under [`.agents/skills/`](.agents/skills/); rules and templates live under [`agent/`](agent/). IDE-specific wiring: [agent/README.md](agent/README.md).
