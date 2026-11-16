@@ -16,8 +16,8 @@ forks:
     created_at: 2026-11-16T14:43:20.939929+00:00
     fork: ungerfall-coauthored/chatgpt-telegrambot
     last_branch: coauthor/azure-openai-ci
-    last_commit: b5cf1ed38fd5080177579a9f18722700fa79a6a2
+    last_commit: 6b44e282265c305b8d7452ce6f52512635270b94
     last_task: copy upstream PR and migrate to Azure OpenAI with fork CI/CD
     sandbox: /home/ungerfall/development/ungerfall-coauthored/sandboxes/chatgpt-telegrambot
-    updated_at: 2026-11-16T14:56:58.399913+00:00
+    updated_at: 2026-11-16T15:36:51.488602+00:00
     upstream: Ungerfall/chatgpt-telegrambot
