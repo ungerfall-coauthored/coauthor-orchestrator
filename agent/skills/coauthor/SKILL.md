@@ -43,6 +43,6 @@ Use `coauthor/<short-kebab-slug>` derived from intent (max ~40 chars).
 - Bootstrap: `chore(agent): initial agent instructions for sandbox`
 - Task: `coauthor: <short summary of intent>`
 
-## Divine rule #1
+## Upstream isolation
 
 Also enforced in [agent/rules/coauthor-isolation.md](../../../agent/rules/coauthor-isolation.md).

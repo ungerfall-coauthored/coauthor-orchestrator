@@ -1,6 +1,6 @@
 # Coauthor orchestrator
 
-**Divine rule #1:** Never open PRs or push to `Ungerfall/*`. All GenAI git work stays on `ungerfall-coauthored` forks.
+**Upstream isolation:** Never open PRs or push to `Ungerfall/*`. All GenAI git work stays on `ungerfall-coauthored` forks.
 
 ## Invoke
 

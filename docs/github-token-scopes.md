@@ -19,11 +19,11 @@ gh auth refresh -h github.com -s repo
 
 Create the orchestrator repo in the browser if `gh repo create` returns 403:
 
-1. New repository → name `coauthor-orchestrator` → private → create empty.
+1. New repository → name `coauthor-orchestrator` → public → create empty.
 2. From this directory:
 
    ```bash
    git remote add origin https://github.com/ungerfall-coauthored/coauthor-orchestrator.git
    git push -u origin main
-   gh repo edit --description "GenAI sandbox orchestrator. Divine rule #1: never PR or push to Ungerfall upstream—all AI work stays on ungerfall-coauthored forks."
+   gh repo edit --description "GenAI sandbox orchestrator. Upstream isolation: AI work stays on ungerfall-coauthored forks; no PRs or pushes to Ungerfall upstream."
    ```

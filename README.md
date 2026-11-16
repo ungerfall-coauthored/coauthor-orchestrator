@@ -2,7 +2,9 @@
 
 GenAI sandbox orchestrator for the **`ungerfall-coauthored`** GitHub account.
 
-> **Divine rule #1:** Never PR or push to **`Ungerfall`** upstream. All AI work stays on **`ungerfall-coauthored`** forks. Human promotion to `Ungerfall` is manual and outside this repo.
+## Upstream isolation
+
+Never open PRs to or push to **`Ungerfall`** upstream. AI work stays on **`ungerfall-coauthored`** forks; promotion to `Ungerfall` is a separate manual step outside this repo.
 
 ## Quick start
 
@@ -29,7 +31,7 @@ If `gh repo create` returns **403**, refresh the coauthor token ([docs/github-to
 ```bash
 git remote add origin https://github.com/ungerfall-coauthored/coauthor-orchestrator.git
 git push -u origin main
-gh repo edit ungerfall-coauthored/coauthor-orchestrator --description "GenAI sandbox orchestrator. Divine rule #1: never PR or push to Ungerfall upstream—all AI work stays on ungerfall-coauthored forks."
+gh repo edit ungerfall-coauthored/coauthor-orchestrator --description "GenAI sandbox orchestrator. Upstream isolation: AI work stays on ungerfall-coauthored forks; no PRs or pushes to Ungerfall upstream."
 ```
 
 ## First fork push

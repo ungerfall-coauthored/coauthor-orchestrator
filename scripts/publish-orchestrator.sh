@@ -7,7 +7,7 @@ source "$SCRIPT_DIR/lib.sh"
 
 require_coauthor_gh
 REMOTE="https://github.com/$(fork_owner)/coauthor-orchestrator.git"
-DESC="GenAI sandbox orchestrator. Divine rule #1: never PR or push to Ungerfall upstream—all AI work stays on ungerfall-coauthored forks."
+DESC="GenAI sandbox orchestrator. Upstream isolation: AI work stays on ungerfall-coauthored forks; no PRs or pushes to Ungerfall upstream."
 
 cd "$ORCH_ROOT"
 if ! git remote get-url origin &>/dev/null; then

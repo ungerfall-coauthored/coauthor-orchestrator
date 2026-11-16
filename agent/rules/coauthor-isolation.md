@@ -1,4 +1,4 @@
-# Coauthor isolation (divine rule #1)
+# Coauthor upstream isolation
 
 This sandbox is GenAI-owned work on a **fork** under `ungerfall-coauthored`. The upstream account **`Ungerfall` must never receive AI-driven git changes**.
 
