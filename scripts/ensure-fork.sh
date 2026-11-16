@@ -27,7 +27,7 @@ fi
 mkdir -p "$SANDBOX_ROOT"
 if [[ ! -d "$SANDBOX/.git" ]]; then
   echo "cloning $FORK -> $SANDBOX"
-  gh repo clone "$FORK" "$SANDBOX"
+  gh repo clone "$FORK" "$SANDBOX" --no-upstream
 else
   echo "sandbox exists: $SANDBOX"
   git -C "$SANDBOX" fetch origin

@@ -12,6 +12,9 @@ Use the portable skill at [.agents/skills/coauthor/SKILL.md](.agents/skills/coau
 
 Example: `/coauthor dotfiles add a note in README that this fork is a GenAI sandbox`
 
+The skill opens fork-only PRs and delegates each PR's review, fixes, and merge
+to a separate subagent. It reports blockers rather than bypassing protections.
+
 ## Canonical config
 
 | Path | Role |

@@ -10,3 +10,14 @@ forks:
     sandbox: /home/ungerfall/development/ungerfall-coauthored/sandboxes/dotfiles
     updated_at: 2026-11-16T13:51:51.980843+00:00
     upstream: Ungerfall/dotfiles
+  - name: chatgpt-telegrambot
+    agentic_bootstrapped: true
+    bootstrapped_at: 2026-11-16T14:43:48.290451+00:00
+    created_at: 2026-11-16T14:43:20.939929+00:00
+    fork: ungerfall-coauthored/chatgpt-telegrambot
+    last_branch: coauthor/azure-openai-ci
+    last_commit: b5cf1ed38fd5080177579a9f18722700fa79a6a2
+    last_task: copy upstream PR and migrate to Azure OpenAI with fork CI/CD
+    sandbox: /home/ungerfall/development/ungerfall-coauthored/sandboxes/chatgpt-telegrambot
+    updated_at: 2026-11-16T14:56:58.399913+00:00
+    upstream: Ungerfall/chatgpt-telegrambot
