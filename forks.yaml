@@ -15,9 +15,9 @@ forks:
     bootstrapped_at: 2026-11-16T14:43:48.290451+00:00
     created_at: 2026-11-16T14:43:20.939929+00:00
     fork: ungerfall-coauthored/chatgpt-telegrambot
-    last_branch: coauthor/configurable-model-budgets
-    last_commit: 0fd16785f0783a44fd5c37239d45b764ed15627c
-    last_task: configure model context and completion budgets, tokenizer, and history retention
+    last_branch: coauthor/deployment-announcements
+    last_commit: 1f03b1057f3246732650b68dddebf1f7e202b0e6
+    last_task: announce deployed versions with Russian summaries of merged PRs
     sandbox: /home/ungerfall/development/ungerfall-coauthored/sandboxes/chatgpt-telegrambot
-    updated_at: 2026-11-17T11:11:26+00:00
+    updated_at: 2026-11-17T14:25:58Z
     upstream: Ungerfall/chatgpt-telegrambot
