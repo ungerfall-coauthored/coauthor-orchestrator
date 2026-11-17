@@ -15,9 +15,9 @@ forks:
     bootstrapped_at: 2026-11-16T14:43:48.290451+00:00
     created_at: 2026-11-16T14:43:20.939929+00:00
     fork: ungerfall-coauthored/chatgpt-telegrambot
-    last_branch: coauthor/azure-openai-ci
-    last_commit: 6b44e282265c305b8d7452ce6f52512635270b94
-    last_task: copy upstream PR and migrate to Azure OpenAI with fork CI/CD
+    last_branch: coauthor/configurable-model-budgets
+    last_commit: 0fd16785f0783a44fd5c37239d45b764ed15627c
+    last_task: configure model context and completion budgets, tokenizer, and history retention
     sandbox: /home/ungerfall/development/ungerfall-coauthored/sandboxes/chatgpt-telegrambot
-    updated_at: 2026-11-16T15:36:51.488602+00:00
+    updated_at: 2026-11-17T11:11:26+00:00
     upstream: Ungerfall/chatgpt-telegrambot
