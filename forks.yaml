@@ -15,9 +15,9 @@ forks:
     bootstrapped_at: 2026-11-16T14:43:48.290451+00:00
     created_at: 2026-11-16T14:43:20.939929+00:00
     fork: ungerfall-coauthored/chatgpt-telegrambot
-    last_branch: coauthor/automatic-azure-deployment
-    last_commit: ce535cc39a7eb7cbb9370159c9a2c53602861b0f
-    last_task: automate isolated .NET 10 Azure deployment with health-gated announcements
+    last_branch: coauthor/replace-function-flex
+    last_commit: 2d206375d3c6da09e99501435c583ab0b9396ccc
+    last_task: pin CI deployment to the approved Flex replacement
     sandbox: /home/ungerfall/development/ungerfall-coauthored/sandboxes/chatgpt-telegrambot
-    updated_at: 2026-11-17T15:38:12Z
+    updated_at: 2026-11-18T14:00:15Z
     upstream: Ungerfall/chatgpt-telegrambot
