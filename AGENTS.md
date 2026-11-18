@@ -19,7 +19,7 @@ to a separate subagent. It reports blockers rather than bypassing protections.
 
 | Path | Role |
 |------|------|
-| [agent/rules/coauthor-isolation.md](agent/rules/coauthor-isolation.md) | Isolation rules |
+| [.agents/rules/coauthor-isolation.md](.agents/rules/coauthor-isolation.md) | Isolation rules |
 | [.agents/skills/coauthor/SKILL.md](.agents/skills/coauthor/SKILL.md) | Full workflow |
 | [coauthor.config.yaml](coauthor.config.yaml) | Owners and sandbox paths |
 | [forks.yaml](forks.yaml) | Fork registry |

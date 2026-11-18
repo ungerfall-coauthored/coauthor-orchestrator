@@ -76,6 +76,22 @@ protections, or claim success while a merge is pending. Do not request secrets
 in chat. If there are no configured PR checks, merge only after the applicable
 local validation passes and all repository requirements are satisfied.
 
+## Agent file layout
+
+Keep agent-owned support files under `.agents/`, not a top-level `agent/`
+directory: skills in `.agents/skills/`, rules in `.agents/rules/`, and
+orchestrator scaffolds in `.agents/templates/`. Keep `AGENTS.md` and any
+tool-specific instruction entrypoints at their supported locations.
+`.agents/rules/` is a storage convention, not an automatic discovery path;
+reference its policies explicitly from those entrypoints.
+
+When touching an older bootstrapped fork, migrate the coauthor-owned
+`agent/rules/coauthor-isolation.md` to `.agents/rules/coauthor-isolation.md`
+and update its references in `AGENTS.md`, `CLAUDE.md`, and
+`.github/copilot-instructions.md`. Preserve policy text and unrelated/custom
+files; if the destination already exists, reconcile it without overwriting
+either version blindly. Do not remove unrelated files from `agent/`.
+
 ## Branch naming
 
 Use `coauthor/<short-kebab-slug>` derived from intent (max ~40 chars).
@@ -87,4 +103,4 @@ Use `coauthor/<short-kebab-slug>` derived from intent (max ~40 chars).
 
 ## Upstream isolation
 
-Also enforced in [agent/rules/coauthor-isolation.md](../../../agent/rules/coauthor-isolation.md).
+Also enforced in [.agents/rules/coauthor-isolation.md](../../rules/coauthor-isolation.md).

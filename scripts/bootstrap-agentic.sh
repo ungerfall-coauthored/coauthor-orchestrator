@@ -7,7 +7,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$SCRIPT_DIR/lib.sh"
 
 SANDBOX="${1:?sandbox path required}"
-TEMPLATES="$ORCH_ROOT/agent/templates"
+TEMPLATES="$ORCH_ROOT/.agents/templates"
 
 if [[ ! -d "$SANDBOX/.git" ]]; then
   echo "error: not a git repo: $SANDBOX" >&2
@@ -16,7 +16,7 @@ fi
 
 require_coauthor_gh
 
-REPO_DESC="Sandbox fork for GenAI work (see agent/rules/coauthor-isolation.md)."
+REPO_DESC="Sandbox fork for GenAI work (see .agents/rules/coauthor-isolation.md)."
 LAYOUT=""
 CMDS="(none detected — add build/test commands here)"
 
@@ -40,11 +40,11 @@ else
   LAYOUT="Inspect repository root for source layout."
 fi
 
-mkdir -p "$SANDBOX/agent/rules" "$SANDBOX/.agents/skills"
+mkdir -p "$SANDBOX/.agents/rules" "$SANDBOX/.agents/skills"
 
-if [[ ! -f "$SANDBOX/agent/rules/coauthor-isolation.md" ]]; then
-  cp "$TEMPLATES/coauthor-isolation.md" "$SANDBOX/agent/rules/coauthor-isolation.md"
-  echo "added agent/rules/coauthor-isolation.md"
+if [[ ! -f "$SANDBOX/.agents/rules/coauthor-isolation.md" ]]; then
+  cp "$TEMPLATES/coauthor-isolation.md" "$SANDBOX/.agents/rules/coauthor-isolation.md"
+  echo "added .agents/rules/coauthor-isolation.md"
 fi
 
 if [[ ! -f "$SANDBOX/AGENTS.md" ]]; then
@@ -65,13 +65,13 @@ fi
 
 if [[ ! -f "$SANDBOX/.github/copilot-instructions.md" ]]; then
   mkdir -p "$SANDBOX/.github"
-  printf '%s\n' 'Follow AGENTS.md and agent/rules/coauthor-isolation.md.' \
+  printf '%s\n' 'Follow AGENTS.md and .agents/rules/coauthor-isolation.md.' \
     > "$SANDBOX/.github/copilot-instructions.md"
   echo "added .github/copilot-instructions.md"
 fi
 
 if [[ ! -f "$SANDBOX/CLAUDE.md" ]]; then
-  printf '%s\n' 'Read AGENTS.md and agent/rules/*.md before making changes.' \
+  printf '%s\n' 'Read AGENTS.md and .agents/rules/*.md before making changes.' \
     > "$SANDBOX/CLAUDE.md"
   echo "added CLAUDE.md"
 fi
