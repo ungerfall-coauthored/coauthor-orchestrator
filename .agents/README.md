@@ -3,11 +3,13 @@
 Canonical files:
 
 - [../AGENTS.md](../AGENTS.md) — start here
-- [rules/](rules/) — always-on policies
-- [../.agents/skills/](../.agents/skills/) — project-discoverable workflows (`coauthor`, etc.)
+- [rules/](rules/) — policies explicitly referenced by `AGENTS.md`
+- [skills/](skills/) — project-discoverable workflows (`coauthor`, etc.)
 - [templates/](templates/) — scaffolds for fork sandboxes
 
 Copilot CLI discovers project skills from `.agents/skills/`; keep skills there.
+The `.agents/rules/` directory is our storage convention, not an automatic
+instruction-discovery path. Keep rule references in the root instruction files.
 
 ## Cursor
 
@@ -25,7 +27,7 @@ Or add `.agents/skills` to your user skill path in Cursor settings.
 Create `CLAUDE.md` at repo root (optional):
 
 ```markdown
-Read AGENTS.md and follow agent/rules/*.md before making changes.
+Read AGENTS.md and follow .agents/rules/*.md before making changes.
 ```
 
 Symlink skills: `ln -sf ../.agents/skills .claude/skills`
@@ -35,7 +37,7 @@ Symlink skills: `ln -sf ../.agents/skills .claude/skills`
 Optional `.github/copilot-instructions.md`:
 
 ```markdown
-Follow AGENTS.md and agent/rules/coauthor-isolation.md.
+Follow AGENTS.md and .agents/rules/coauthor-isolation.md.
 ```
 
 ## Generic

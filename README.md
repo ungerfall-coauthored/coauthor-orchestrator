@@ -51,4 +51,6 @@ skill's PR review and merge workflow:
 
 ## Agent-agnostic layout
 
-Skills live under [`.agents/skills/`](.agents/skills/); rules and templates live under [`agent/`](agent/). IDE-specific wiring: [agent/README.md](agent/README.md).
+Skills, rules, and templates live under [`.agents/`](.agents/). Skills are
+discovered from `.agents/skills/`; rules in `.agents/rules/` are explicitly
+referenced by root instruction files. IDE-specific wiring: [.agents/README.md](.agents/README.md).

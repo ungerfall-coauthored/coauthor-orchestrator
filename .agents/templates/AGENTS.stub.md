@@ -1,6 +1,6 @@
 # AGENTS.md
 
-GenAI sandbox fork. Read [agent/rules/coauthor-isolation.md](agent/rules/coauthor-isolation.md) first (upstream isolation: never PR or push to `Ungerfall/*`).
+GenAI sandbox fork. Read [.agents/rules/coauthor-isolation.md](.agents/rules/coauthor-isolation.md) first (upstream isolation: never PR or push to `Ungerfall/*`).
 
 ## Repository
 
