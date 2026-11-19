@@ -15,9 +15,9 @@ forks:
     bootstrapped_at: 2026-11-16T14:43:48.290451+00:00
     created_at: 2026-11-16T14:43:20.939929+00:00
     fork: ungerfall-coauthored/chatgpt-telegrambot
-    last_branch: coauthor/oidc-conversation-policy
-    last_commit: a35d77e250329cf98a1a7de582b85d2436793c4a
-    last_task: fix natural-language bot requests and deploy food-group policy through existing Azure OIDC identity
+    last_branch: coauthor/one-shot-release-notes
+    last_commit: 279113f0aeaa53625bc9b5a651d55e6eef4ea692
+    last_task: replace announcement polling with one-shot pipeline delivery using existing Azure OpenAI credentials
     sandbox: /home/ungerfall/development/ungerfall-coauthored/sandboxes/chatgpt-telegrambot
-    updated_at: 2026-11-19T12:28:31Z
+    updated_at: 2026-11-19T12:52:31Z
     upstream: Ungerfall/chatgpt-telegrambot
