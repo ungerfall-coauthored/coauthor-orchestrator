@@ -15,6 +15,15 @@ Example: `/coauthor dotfiles add a note in README that this fork is a GenAI sand
 The skill opens fork-only PRs and delegates each PR's review, fixes, and merge
 to a separate subagent. It reports blockers rather than bypassing protections.
 
+## Validation and release gates
+
+Follow the skill's **Integration and release gates** before any push, PR, or
+merge affecting external-service behavior. Relevant live tests must exercise
+the actual application client and pass; offline-only CI, skipped tests, missing
+credentials, or unconfigured deployments do not satisfy this requirement.
+Keep blocked work local. Verify hosted configuration before an automatic
+release, and honor publication/deployment holds until explicit release approval.
+
 ## Canonical config
 
 | Path | Role |
